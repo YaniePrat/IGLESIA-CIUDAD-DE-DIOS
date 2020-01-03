@@ -14,7 +14,7 @@ body {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 150px 0;
+  padding: 220px 0;
   background-color: rgba(0, 123, 255, 0.5);
 }
 
@@ -345,7 +345,7 @@ body {
 
 .section-title {
   font-size: 2rem;
-  margin-top: 20px;
+  margin-top:65 px;
   margin-bottom: 20px;
   text-align: center;
   color: #007bff;
