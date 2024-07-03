@@ -1,130 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iglesia Ciudad de Dios</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iglesia Ciudad de Dios</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+      .navbar-brand {
+        font-weight: 700;
+      }
 
-<body>
-  <nav class="navbar navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand shadow-lg" >Tercera Iglesia Bautista <em>"Ciudad de Dios"</em></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">"Ciudad de Dios"</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+      .hero {
+        background: url("hero-image.webp") no-repeat center center;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 150px 0;
+      }
 
-           
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      .btn-custom {
+        background-color: #ffd700;
+        border: none;
+        color: black;
+      }
+
+      .btn-contact {
+        background-color: #28a745;
+        border: none;
+        color: white;
+        font-weight: bold;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .card {
+        margin: 20px 0;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .card-body {
+        background-color: #f8f9fa;
+        border-radius: 15px;
+        padding: 20px;
+      }
+
+      .footer {
+        background: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer a {
+        color: #ddd;
+        margin: 0 10px;
+      }
+
+      .footer a:hover {
+        color: white;
+      }
+
+      .scroll-to-top {
+        display: block; /* Change from none to block */
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #ffd700;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .scroll-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .scroll-to-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          >Tercera Iglesia Bautista <em>"Ciudad de Dios"</em></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Acerca de Nosotros</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Acerca de Nosotros</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Biografia y contacto del Pastor</a>
+              <a class="nav-link" href="#">Biografía y Contacto del Pastor</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Testimonios
               </a>
-                <li><a class="dropdown-item" href="#">Orestes Jesus
-                    Fajardo Almaguer(Pastor)</a></li>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Orestes Jesus Fajardo Almaguer (Pastor)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Yunior Peña Ricardo (Miembro)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Alier Proenza (Miembro)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Luis Miguel Pozo (Miembro)</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Yunior Peña Ricardo(Miembro)
-            <li><a class="dropdown-item" href="#">Alier Proenza(Miembro)</a></li>
-            <li>
-            <li><a class="dropdown-item" href="#">Luis Miguel Pozo(Miembro)</a></li>
           </ul>
-          </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
+          <form class="d-flex ms-lg-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
-    </div>
-  </nav>
-  <div>
-    <div class="fondo" >
-      <h1 id="Bienvenidos">Bienvenidos</h1>
-      <p class="texto-biblico">
-      
-       
-      </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold fondo-boton" id="boton1">Doctrina</button>
-        <button id="boton2" type="button" class="btn btn-outline-light btn-lg px-4 fondo-boton">Contacto</button>
+    </nav>
+
+    <div class="hero">
+      <h1>Bienvenidos</h1>
+      <p>Somos una comunidad de fe, esperanza y amor.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+        <button class="btn btn-custom btn-lg px-4 me-sm-3 fw-bold" id="boton1">
+          Doctrina
+        </button>
+        <button id="boton2" type="button" class="btn btn-contact btn-lg px-4">
+          Contacto
+        </button>
       </div>
     </div>
-  </div>
-  <section id="doctrina" >
-    <h2>Principios Bautistas Fundamentales</h2>
-    <div class="container "> <div class="row">
-       <div class="col-md-6"> <p class="parrafos height"><strong>-
-        La libertad de conciencia —</strong> <br>
-       Creemos en el sacerdocio de cada creyente. Creemos tanto en la libertad
-       como en la responsabilidad de que cada persona tiene
-       para relacionarse a Dios de una manera directa y personal sin que se
-       le imponga un credo y sin el control del clero o el gobierno.</p> </div>
 
-       <div class="col-md-6"><p class="parrafos height"><strong>- La libertad de interpretar la Biblia —</strong> <br>
-        Creemos en la autoridad de las Sagradas Escrituras.
-        Creemos que la Biblia, bajo la dirección del Señor Jesucristo,
-        es el centro de la vida del individuo y de la iglesia.
-        Apoyamos y ratificamos la libertad y el derecho que cada cristiano
-        tiene para interpretar y vivir de acuerdo a las Escrituras bajo la
-        dirección del Espíritu Santo.</p> </div>
+    <section id="doctrina">
+      <div class="container">
+        <h2 class="section-title">Principios Bautistas Fundamentales</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">La libertad de conciencia</h5>
+                <p class="card-text">
+                  Creemos en el sacerdocio de cada creyente. Creemos tanto en la
+                  libertad como en la responsabilidad de que cada persona tiene
+                  para relacionarse a Dios de una manera directa y personal sin
+                  que se le imponga un credo y sin el control del clero o el
+                  gobierno.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">La libertad de interpretar la Biblia</h5>
+                <p class="card-text">
+                  Creemos en la autoridad de las Sagradas Escrituras. Creemos
+                  que la Biblia, bajo la dirección del Señor Jesucristo, es el
+                  centro de la vida del individuo y de la iglesia. Apoyamos y
+                  ratificamos la libertad y el derecho que cada cristiano tiene
+                  para interpretar y vivir de acuerdo a las Escrituras bajo la
+                  dirección del Espíritu Santo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">La libertad de la Iglesia</h5>
+                <p class="card-text">
+                  Creemos en la autonomía de cada congregación local. Creemos
+                  que las iglesias bautistas tienen libertad, bajo el señorío de
+                  Jesucristo, para hacer decisiones en cuanto a sus miembros, a
+                  sus líderes, a sus cultos de adoración, a su trabajo, para
+                  ordenar al ministerio a aquellas personas dotadas para tal, y
+                  para colaborar con aquellos que son parte del cuerpo de
+                  Jesucristo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Libertad religiosa</h5>
+                <p class="card-text">
+                  Creemos en la libertad religiosa, y en la libertad de expresar
+                  la religión, sin que la misma religión se utilice para oprimir
+                  sino para promover tal libertad. Apoyamos la separación entre
+                  la iglesia y el estado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-         </div> <div class="row"> <div class="col-md-6"><p class="parrafos height"><strong>- La libertad de la Iglesia —</strong><br>
-          Creemos en la autonomía de cada congregación local.
-          Creemos que las iglesias bautistas tienen libertad, bajo el señorío de Jesucristo,
-          para hacer decisiones en cuanto a sus miembros, a sus líderes,
-          a sus cultos de adoración, a su trabajo, para ordenar al ministerio
-          a aquellas personas dotadas para tal, y para colaborar con aquellos
-          que son parte del cuerpo de Jesucristo.</p> </div>
+    <section id="contacto">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <!-- Contact form or details can be added here -->
+      </div>
+    </section>
 
-            <div class="col-md-6"> <p class="parrafos height"><strong>- Libertad religiosa —</strong><br>
-              Creemos en la libertad religiosa, y en la libertad de expresar la religión,
-              sin que la misma religión se utilice para oprimir sino para promover tal libertad.
-              Apoyamos la separación entre la iglesia y el estado.
-            </p></div> </div> </div>
-    
-    
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Tercera Iglesia Bautista "Ciudad de Dios". Todos los
+          derechos reservados.
+        </p>
+        <p>
+          <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+    </footer>
 
-  </div>
+    <button class="scroll-to-top" onclick="scrollToTop()">&#8679;</button>
+    <script>
+      document.addEventListener("scroll", function () {
+        const scrollToTopButton = document.querySelector(".scroll-to-top");
+        if (window.scrollY > 200) {
+          // Adjust the value to determine when to show the button
+          scrollToTopButton.classList.add("visible");
+        } else {
+          scrollToTopButton.classList.remove("visible");
+        }
+      });
 
-
-  </section>
-  <section id="contacto">
-    <h2>Contacto</h2>
-  
-
-    
-  </section>
-
-
-  
-
-  <script src="scripts.js"></script>
-  
-  <script src="bootstrap.bundle.min.js"></script>
-
-</body>
-
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
