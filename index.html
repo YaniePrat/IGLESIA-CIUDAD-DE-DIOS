@@ -10,128 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-      }
-
-      .navbar-brand {
-        font-weight: 700;
-      }
-
-      .hero {
-        background: url("hero-image.webp") no-repeat center center;
-        background-size: cover;
-        color: white;
-        text-align: center;
-        padding: 150px 0;
-      }
-
-      .hero h1 {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      }
-
-      .hero p {
-        font-size: 1.5rem;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-      }
-
-      .btn-custom {
-        background-color: #ffd700;
-        border: none;
-        color: black;
-      }
-
-      .btn-contact {
-        background-color: #28a745;
-        border: none;
-        color: white;
-        font-weight: bold;
-      }
-
-      .section-title {
-        font-size: 2rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-
-      .card {
-        margin: 20px 0;
-        border: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border-radius: 15px;
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-
-      .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      }
-
-      .card-body {
-        background-color: #f8f9fa;
-        border-radius: 15px;
-        padding: 20px;
-      }
-
-      .footer {
-        background: #333;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-      }
-
-      .footer a {
-        color: #ddd;
-        margin: 0 10px;
-      }
-
-      .footer a:hover {
-        color: white;
-      }
-
-      .scroll-to-top {
-        display: block; /* Change from none to block */
-        opacity: 0;
-        visibility: hidden;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #ffd700;
-        color: black;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.3s,
-          box-shadow 0.3s;
-      }
-
-      .scroll-to-top.visible {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .scroll-to-top:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          >Tercera Iglesia Bautista <em>"Ciudad de Dios"</em></a
-        >
+        <a class="navbar-brand" href="#">Iglesia Ciudad de Dios</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -146,81 +37,81 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#about"
                 >Acerca de Nosotros</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Biografía y Contacto del Pastor</a>
+              <a class="nav-link" href="#services">Servicios</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Testimonios
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Orestes Jesus Fajardo Almaguer (Pastor)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Yunior Peña Ricardo (Miembro)</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Alier Proenza (Miembro)</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Luis Miguel Pozo (Miembro)</a
-                  >
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sermons">Sermones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
             </li>
           </ul>
-          <form class="d-flex ms-lg-3" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
 
     <div class="hero">
-      <h1>Bienvenidos</h1>
-      <p>Somos una comunidad de fe, esperanza y amor.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
-        <button class="btn btn-custom btn-lg px-4 me-sm-3 fw-bold" id="boton1">
-          Doctrina
-        </button>
-        <button id="boton2" type="button" class="btn btn-contact btn-lg px-4">
-          Contacto
-        </button>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Bienvenidos</h1>
+        <p>Somos una comunidad de fe, esperanza y amor.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
+          <button
+            class="btn btn-custom btn-lg px-4 me-sm-3 fw-bold"
+            id="boton1"
+          >
+            Conócenos
+          </button>
+          <button id="boton2" type="button" class="btn btn-contact btn-lg px-4">
+            Contáctanos
+          </button>
+        </div>
       </div>
     </div>
 
-    <section id="doctrina">
+    <section id="about">
       <div class="container">
-        <h2 class="section-title">Principios Bautistas Fundamentales</h2>
+        <h2 class="section-title">Acerca de Nosotros</h2>
+        <p class="intro-text">
+          Somos una iglesia dedicada a difundir el amor de Dios y servir a
+          nuestra comunidad.
+        </p>
+        <div class="row align-items-center about-content">
+          <div class="col-md-6">
+            <img
+              src="pastor.webp"
+              alt="Pastor"
+              class="img-fluid pastor-image"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Pastor John Doe</h3>
+            <p>
+              Nuestro pastor, John Doe, ha estado con nosotros por más de 10
+              años, guiándonos en nuestra fe.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="principles">
+      <div class="container">
+        <h2 class="section-title">Principios Bautistas</h2>
         <div class="row">
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">La libertad de conciencia</h5>
+                <h5 class="card-title">
+                  <i class="fas fa-bible"></i> La libertad de conciencia
+                </h5>
                 <p class="card-text">
                   Creemos en el sacerdocio de cada creyente. Creemos tanto en la
                   libertad como en la responsabilidad de que cada persona tiene
@@ -234,7 +125,10 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">La libertad de interpretar la Biblia</h5>
+                <h5 class="card-title">
+                  <i class="fas fa-scroll"></i> La libertad de interpretar la
+                  Biblia
+                </h5>
                 <p class="card-text">
                   Creemos en la autoridad de las Sagradas Escrituras. Creemos
                   que la Biblia, bajo la dirección del Señor Jesucristo, es el
@@ -251,7 +145,9 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">La libertad de la Iglesia</h5>
+                <h5 class="card-title">
+                  <i class="fas fa-church"></i> La libertad de la Iglesia
+                </h5>
                 <p class="card-text">
                   Creemos en la autonomía de cada congregación local. Creemos
                   que las iglesias bautistas tienen libertad, bajo el señorío de
@@ -267,7 +163,9 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Libertad religiosa</h5>
+                <h5 class="card-title">
+                  <i class="fas fa-dove"></i> Libertad religiosa
+                </h5>
                 <p class="card-text">
                   Creemos en la libertad religiosa, y en la libertad de expresar
                   la religión, sin que la misma religión se utilice para oprimir
@@ -281,10 +179,134 @@
       </div>
     </section>
 
-    <section id="contacto">
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Servicios</h2>
+        <ul class="services-list">
+          <li>
+            <i class="fas fa-church"></i>
+            Domingo - Misa a las 9 AM y 11 AM
+          </li>
+          <li>
+            <i class="fas fa-book"></i>
+            Miércoles - Estudio Bíblico a las 7 PM
+          </li>
+          <li>
+            <i class="fas fa-users"></i>
+            Viernes - Grupo de Jóvenes a las 7 PM
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="events">
+      <div class="container">
+        <h2 class="section-title">Eventos</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="evento1.webp" class="card-img-top" alt="Event 1" />
+              <div class="card-body">
+                <h5 class="card-title">Evento 1</h5>
+                <p class="card-text">Descripción del evento 1.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="evento2.webp" class="card-img-top" alt="Event 2" />
+              <div class="card-body">
+                <h5 class="card-title">Evento 2</h5>
+                <p class="card-text">Descripción del evento 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="evento3.webp" class="card-img-top" alt="Event 3" />
+              <div class="card-body">
+                <h5 class="card-title">Evento 3</h5>
+                <p class="card-text">Descripción del evento 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sermons">
+      <div class="container">
+        <h2 class="section-title">Sermones</h2>
+        <ul class="sermons-list">
+          <li>
+            <a href="sermon1.mp3"><i class="fas fa-file-audio"></i> Sermón 1</a>
+            <a href="sermon1.mp3" class="btn btn-download" download
+              ><i class="fas fa-download"></i> Descargar</a
+            >
+          </li>
+          <li>
+            <a href="sermon2.mp3"><i class="fas fa-file-audio"></i> Sermón 2</a>
+            <a href="sermon2.mp3" class="btn btn-download" download
+              ><i class="fas fa-download"></i> Descargar</a
+            >
+          </li>
+          <li>
+            <a href="sermon3.mp3"><i class="fas fa-file-audio"></i> Sermón 3</a>
+            <a href="sermon3.mp3" class="btn btn-download" download
+              ><i class="fas fa-download"></i> Descargar</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
       <div class="container">
         <h2 class="section-title">Contacto</h2>
-        <!-- Contact form or details can be added here -->
+        <div class="row">
+          <div class="col-md-6 contact-info">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>
+              <strong>Dirección:</strong> Calle Principal 123, Ciudad, País
+            </p>
+            <p>
+              <i class="fas fa-phone-alt"></i> <strong>Teléfono:</strong> +123
+              456 7890
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <strong>Email:</strong> info@iglesiaciudaddedios.com
+            </p>
+            <p>
+              Síguenos en nuestras redes sociales:
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-contact">Enviar</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
