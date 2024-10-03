@@ -212,6 +212,15 @@ body {
   margin-right: 10px;
 }
 
+section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 .section-title {
   font-size: 2rem;
   margin-top: 20px;
