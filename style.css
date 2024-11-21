@@ -363,7 +363,9 @@ section {
   height: px;
 }
 
-.logo{
-  height: 80px;
-  /* width: 110px; */
+.logo > img{
+  width: auto;
+  height: 75px;
+  padding: 0.7rem;
+  border-radius: 25.2%;
 }
