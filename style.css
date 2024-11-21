@@ -362,3 +362,8 @@ section {
 .heigth-fijo{
   height: px;
 }
+
+.logo{
+  height: 80px;
+  /* width: 110px; */
+}
